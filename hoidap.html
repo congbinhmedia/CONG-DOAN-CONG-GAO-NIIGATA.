@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hỏi đáp – Giáo xứ Niigata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">✝️ Giáo xứ Niigata</div>
+  <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="lichle.html">Lịch lễ</a></li>
+    <li><a href="loichua.html">Lời Chúa</a></li>
+    <li><a href="hoidap.html">Hỏi đáp</a></li>
+  </ul>
+</nav>
+<div class="page-banner"
+     style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+  <div class="banner-text">
+    <h1>❓ Hỏi Đáp Công Giáo</h1>
+    <p>Chia sẻ & đồng hành trong đức tin</p>
+  </div>
+</div>
+
+<main class="qa">
+
+  <!-- GỬI CÂU HỎI -->
+  <div class="ask-box">
+    <h2>❓ Gửi câu hỏi Công Giáo</h2>
+    <p>Bạn có thắc mắc về đức tin, phụng vụ hay đời sống Kitô hữu?</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEZSo_R0Bs-YtbyeooMsw02ld5HxGzHLg24RrKPaKiZyfyuA/viewform"
+       target="_blank">
+      ✍️ Gửi câu hỏi
+    </a>
+  </div>
+
+  <!-- CÂU HỎI 1 -->
+  <div class="qa-item">
+    <div class="qa-question">
+      🙋‍♂️ Hỏi: Tại sao người Công Giáo phải đi lễ Chúa Nhật?
+    </div>
+    <div class="qa-answer">
+      ✝️ Trả lời: Việc tham dự Thánh lễ Chúa Nhật là bổn phận
+      căn bản của người Công Giáo, vì đây là ngày Chúa Phục Sinh,
+      ngày cộng đoàn quy tụ để tạ ơn và hiệp thông.
+    </div>
+  </div>
+
+  <!-- CÂU HỎI 2 -->
+  <div class="qa-item">
+    <div class="qa-question">
+      🙋‍♀️ Hỏi: Có bắt buộc phải xưng tội trước khi rước lễ không?
+    </div>
+    <div class="qa-answer">
+      ✝️ Trả lời: Nếu ý thức mình đang ở trong tình trạng tội trọng,
+      người tín hữu cần lãnh nhận bí tích Hòa Giải trước khi rước lễ,
+      để xứng đáng hiệp thông với Chúa Kitô.
+    </div>
+  </div>
+
+</main>
+
+
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
