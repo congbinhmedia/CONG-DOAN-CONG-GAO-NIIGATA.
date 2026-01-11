@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giới thiệu – Công Đoàn Công Giáo Niigata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BẮT BUỘC PHẢI CÓ -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Công Đoàn Công Giáo Niigata</h1>
+  <p>Giới thiệu</p>
+</header>
+
+<section class="intro reveal">
+  <div class="intro-box">
+    <h2>Giới thiệu Công Đoàn Công Giáo Niigata</h2>
+    <div class="divider"></div>
+
+    <p>
+      Công Đoàn Công Giáo Niigata được hình thành với thao thức quy tụ
+      những người con Công Giáo Việt Nam đang sinh sống, học tập và làm việc
+      tại tỉnh Niigata – Nhật Bản, để cùng nhau sống đức tin, hiệp thông
+      và nâng đỡ nhau trong đời sống Kitô hữu nơi đất khách quê người.
+    </p>
+
+    <p>
+      Trong bối cảnh xa quê hương, khác biệt về ngôn ngữ và văn hóa,
+      Công Đoàn trở thành mái nhà chung,
+      nơi mỗi người tìm thấy sự bình an và nâng đỡ thiêng liêng.
+    </p>
+
+    <blockquote>
+      “Ở đâu có hai hoặc ba người họp lại nhân danh Thầy,
+      thì có Thầy ở giữa họ.” (Mt 18,20)
+    </blockquote>
+
+    <p>
+      Website này được xây dựng nhằm phục vụ cộng đoàn,
+      giúp mọi người kết nối, chia sẻ và cùng nhau lớn lên trong đức tin.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Công Đoàn Công Giáo Niigata</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+  function revealOnScroll() {
+    const h = window.innerHeight;
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < h - 80) {
+        el.classList.add("active");
+      }
+    });
+  }
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
