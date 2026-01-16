@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thánh Ca – Công Đoàn Công Giáo Niigata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Load CSS chung -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎵 Thánh Ca</h1>
+  <p>Nghe nhạc – Cầu nguyện – Suy niệm</p>
+</header>
+
+<section class="intro reveal">
+  <div class="intro-box">
+    <h2>Thánh Ca chọn lọc</h2>
+    <div class="divider"></div>
+
+    <p>
+      Những bài thánh ca giúp tâm hồn chúng ta lắng đọng,
+      kết hiệp mật thiết hơn với Thiên Chúa
+      qua âm nhạc, lời ca và tâm tình cầu nguyện.
+    </p>
+
+    <!-- BÀI 1 -->
+    <div class="music-item">
+      <h3>🎶 Thánh Ca 1</h3>
+      <div class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/0qbLDhDIuH0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- BÀI 2 -->
+    <div class="music-item">
+      <h3>🎶 Thánh Ca 2</h3>
+      <div class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/qGkgFznIJo8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+     
+</section>
+
+<footer class="footer">
+  <p>© 2026 Công Đoàn Công Giáo Niigata</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+  function revealOnScroll() {
+    const h = window.innerHeight;
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < h - 80) {
+        el.classList.add("active");
+      }
+    });
+  }
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
