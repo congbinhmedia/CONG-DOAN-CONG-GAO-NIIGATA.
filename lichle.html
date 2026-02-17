@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch lễ – Cộng Đoàn Niigata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root{
+      --mua-chay:#5b2c83;
+      --mua-chay-light:#f3ecf9;
+      --accent:#9b59b6;
+    }
+
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: var(--mua-chay-light);
+    }
+
+    /* NAVBAR */
+    .navbar{
+      background: var(--mua-chay);
+      color:white;
+      padding:12px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .navbar a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-size:14px;
+    }
+
+    .nav-menu{
+      list-style:none;
+      display:flex;
+      padding:0;
+      margin:0;
+    }
+
+    .page-banner{
+      height:220px;
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      position:relative;
+    }
+
+    .page-banner::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(91,44,131,0.6);
+    }
+
+    .banner-text{
+      position:relative;
+      z-index:1;
+    }
+
+    .schedule{
+      max-width:900px;
+      margin:40px auto;
+      padding:0 15px;
+    }
+
+    .schedule h2{
+      text-align:center;
+      color:var(--mua-chay);
+      margin-bottom:25px;
+    }
+
+    .schedule-table{
+      width:100%;
+      border-collapse:collapse;
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .schedule-table th{
+      background:var(--mua-chay);
+      color:white;
+      padding:12px;
+      text-align:left;
+    }
+
+    .schedule-table td{
+      padding:14px;
+      border-bottom:1px solid #eee;
+      vertical-align:top;
+    }
+
+    .schedule-table tr:hover{
+      background:#f9f4ff;
+    }
+
+    .luu-y{
+      margin-top:8px;
+      padding:8px;
+      background:#fff3cd;
+      border-left:4px solid #f39c12;
+      font-size:14px;
+    }
+
+    .vn{
+      color:#c0392b;
+      font-weight:bold;
+    }
+
+    .le-la{
+      color:#8e44ad;
+      font-weight:bold;
+    }
+
+    /* Mobile */
+    @media(max-width:600px){
+      .schedule-table, 
+      .schedule-table thead, 
+      .schedule-table tbody, 
+      .schedule-table th, 
+      .schedule-table td, 
+      .schedule-table tr{
+        display:block;
+      }
+
+      .schedule-table th{
+        display:none;
+      }
+
+      .schedule-table tr{
+        margin-bottom:20px;
+        background:white;
+        padding:15px;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      .schedule-table td{
+        border:none;
+        padding:6px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div>✝️ Cộng Đoàn Niigata</div>
+  <ul class="nav-menu">
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="lichle.html">Lịch lễ</a></li>
+    <li><a href="loichua.html">Lời Chúa</a></li>
+    <li><a href="hoidap.html">Hỏi đáp</a></li>
+    <li><a href="gioithieu.html">Giới thiệu</a></li>
+    <li><a href="nhac.html">Nhạc Thánh ca</a></li>
+  </ul>
+</nav>
+
+<div class="page-banner"
+     style="background-image:url('https://images.unsplash.com/photo-1507668077129-56e32842fceb');">
+  <div class="banner-text">
+    <h1>📅 Lịch Lễ Tháng 3</h1>
+    <p>Mùa Chay – Năm 2026</p>
+  </div>
+</div>
+
+<main class="schedule">
+  <h2>📅 LỊCH LỄ THÁNG 3 NĂM 2026</h2>
+
+  <table class="schedule-table">
+    <tr>
+      <th>Ngày</th>
+      <th>Giờ</th>
+      <th>Nội dung Thánh Lễ</th>
+    </tr>
+
+    <tr>
+      <td>01/03</td>
+      <td><strong>14:00</strong></td>
+      <td>
+        <strong>Chúa Nhật II Mùa Chay</strong><br>
+        <span class="vn">Lễ tiếng Việt</span> tại nhà thờ <strong>Nagaoka</strong>
+        <p class="luu-y">
+          Lưu ý: Giờ lễ có thể thay đổi do tình hình giao thông
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>08/03</td>
+      <td><strong>09:30</strong></td>
+      <td>
+        <strong>Chúa Nhật III Mùa Chay</strong><br>
+        Lễ tiếng Nhật tại nhà thờ <strong>Niigata</strong><br>
+        Sau thánh lễ có cầu nguyện nhóm
+      </td>
+    </tr>
+
+    <tr>
+      <td>15/03</td>
+      <td><strong>12:00</strong></td>
+      <td>
+        <strong>Chúa Nhật IV Mùa Chay</strong><br>
+        <span class="vn">Lễ tiếng Việt</span> tại nhà thờ <strong>Chính tòa Niigata</strong>
+        <p class="luu-y">
+          Tập hát tại nhà thờ lúc 11:00
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>22/03</td>
+      <td><strong>09:30</strong></td>
+      <td>
+        <strong>Chúa Nhật V Mùa Chay</strong><br>
+        Lễ tiếng Nhật tại nhà thờ <strong>Niigata</strong>
+      </td>
+    </tr>
+
+    <tr>
+      <td>29/03</td>
+      <td><strong>09:30</strong></td>
+      <td>
+        <strong class="le-la">Lễ Lá – Tưởng niệm Cuộc Thương Khó</strong><br>
+        Lễ tiếng Nhật tại nhà thờ <strong>Niigata</strong>
+      </td>
+    </tr>
+
+  </table>
+</main>
+
+</body>
+</html>
