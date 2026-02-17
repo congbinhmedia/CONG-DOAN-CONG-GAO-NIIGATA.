@@ -1,107 +1,160 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Bảo trì – Cộng Đoàn Niigata</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Lời Chúa – Cộng Đoàn Niigata</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --lent-dark:#4b1f6f;
-      --lent-light:#7d3c98;
-      --bg:linear-gradient(160deg,#3d145a,#6c3483);
-    }
+<style>
+:root{
+  --lent-dark:#4b1f6f;
+  --lent:#6c3483;
+  --lent-light:#f4ecf7;
+}
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    body{
-      font-family:'Quicksand',sans-serif;
-      background:var(--bg);
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:white;
-      padding:20px;
-    }
+body{
+  font-family:'Quicksand',sans-serif;
+  background:var(--lent-light);
+}
 
-    .maintenance-container{
-      max-width:500px;
-      width:100%;
-      background:rgba(255,255,255,0.08);
-      padding:40px 25px;
-      border-radius:20px;
-      backdrop-filter:blur(10px);
-      box-shadow:0 15px 35px rgba(0,0,0,0.3);
-      animation:fadeIn 1s ease;
-    }
+/* NAVBAR */
+.navbar{
+  background:var(--lent-dark);
+  color:white;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
 
-    .cross{
-      font-size:50px;
-      margin-bottom:15px;
-      animation:float 2.5s ease-in-out infinite;
-    }
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin:5px 10px;
+  font-size:14px;
+}
 
-    h1{
-      font-family:'Montserrat',sans-serif;
-      font-size:1.8rem;
-      margin-bottom:15px;
-      letter-spacing:1px;
-    }
+.nav-menu{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+}
 
-    p{
-      font-size:1rem;
-      line-height:1.6;
-      opacity:0.9;
-    }
+/* BANNER */
+.page-banner{
+  height:220px;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+}
 
-    .small{
-      margin-top:20px;
-      font-size:0.85rem;
-      opacity:0.7;
-    }
+.page-banner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(75,31,111,0.65);
+}
 
-    @keyframes fadeIn{
-      from{opacity:0; transform:translateY(20px);}
-      to{opacity:1; transform:translateY(0);}
-    }
+.banner-text{
+  position:relative;
+  z-index:1;
+}
 
-    @keyframes float{
-      0%,100%{transform:translateY(0);}
-      50%{transform:translateY(-8px);}
-    }
+/* MAINTENANCE BOX */
+.maintenance-box{
+  max-width:700px;
+  margin:50px auto;
+  background:white;
+  padding:40px 25px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
 
-    @media(max-width:480px){
-      h1{font-size:1.5rem;}
-      .maintenance-container{padding:30px 20px;}
-    }
+.maintenance-box h2{
+  font-family:'Montserrat',sans-serif;
+  color:var(--lent-dark);
+  margin-bottom:15px;
+}
 
-  </style>
+.maintenance-box p{
+  line-height:1.6;
+  color:#555;
+}
+
+.maintenance-icon{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+/* Ẩn nội dung thật */
+.scripture-article{
+  display:none;
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .maintenance-box{
+    margin:30px 15px;
+    padding:30px 20px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="maintenance-container">
-    <div class="cross">✝️</div>
-    <h1>TRANG ĐANG BẢO TRÌ</h1>
-    <p>
-      Website <strong>Cộng Đoàn Công Giáo Niigata</strong><br>
-      hiện đang được cập nhật nội dung phụng vụ.<br><br>
-      Xin quý anh chị vui lòng quay lại sau ít phút.
-    </p>
+<nav class="navbar">
+  <div>✝️ CỘNG ĐOÀN CÔNG GIÁO NIIGATA</div>
+  <ul class="nav-menu">
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="lichle.html">Lịch lễ</a></li>
+    <li><a href="loichua.html">Lời Chúa</a></li>
+    <li><a href="hoidap.html">Hỏi đáp</a></li>
+    <li><a href="gioithieu.html">Giới thiệu</a></li>
+    <li><a href="nhac.html">Nhạc Thánh ca</a></li>
+  </ul>
+</nav>
 
-    <div class="small">
-      © 2026 Cộng Đoàn Công Giáo Niigata
-    </div>
+<div class="page-banner"
+     style="background-image:url('https://images.unsplash.com/photo-1529070538774-1843cb3265df');">
+  <div class="banner-text">
+    <h1>📖 PHỤNG VỤ LỜI CHÚA</h1>
+    <p>Trang đang cập nhật nội dung</p>
   </div>
+</div>
+
+<!-- THÔNG BÁO BẢO TRÌ -->
+<div class="maintenance-box">
+  <div class="maintenance-icon">⚠️</div>
+  <h2>TRANG ĐANG BẢO TRÌ</h2>
+  <p>
+    Nội dung Lời Chúa đang được cập nhật theo phụng vụ mới.<br><br>
+    Xin quý anh chị vui lòng quay lại sau.<br><br>
+    Cảm ơn sự thông cảm của cộng đoàn.
+  </p>
+</div>
+
+<!-- Nội dung thật (đang ẩn) -->
+<article class="scripture-article">
+  Nội dung Lời Chúa ở đây...
+</article>
 
 </body>
 </html>
